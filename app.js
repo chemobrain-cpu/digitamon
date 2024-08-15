@@ -1,13 +1,8 @@
 require('dotenv').config()
 const app = require('express')();
 const express = require('express')
-const ejs = require("ejs")
-const path = require("path")
 require('dotenv').config()
-const fs = require("fs")
-const User = require("./database/databaseConfig").User
 const session = require("express-session");
-const mongoose = require("mongoose")
 
 app.use(express.static("public"));
 
@@ -30,11 +25,7 @@ const cors = require("cors")
 const bodyParser = require("body-parser")
 const multer = require("multer")
 app.use(bodyParser.json())
-const { body, validationResult } = require('express-validator')
-const compression = require('compression')
-const { Server } = require('socket.io')
-let server = require('http').createServer(app)
-const axios = require('axios')
+
 
 
 
@@ -61,13 +52,6 @@ const clientRoutes = require("./routes/client")
 
 //using the routes
 app.use(clientRoutes.router)
-
-/*
-app.get('/admin',(req,res)=>{
-    res.send(`you're about logging in to stockexchangemanagement admin panel. click<br>  <a href='https://brooker-admin.onrender.com'>here</a>`)
-})
-*/
-
 
 //error handler //express error middleware
 app.use((err,req,res,next)=>{

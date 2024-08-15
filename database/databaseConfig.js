@@ -1,3 +1,4 @@
+/*
 const mongoose = require("mongoose")
 mongoose.connect(process.env.DB_STRING).then(() => {
     //console.log("connected to database")
@@ -163,6 +164,7 @@ const AdminSchema = new mongoose.Schema({
     }
 })
 
+
 let Cosignment = new mongoose.model("Cosignment", CosignmentSchema)
 let History = new mongoose.model("History", HistorySchema)
 let Admin = new mongoose.model("Admin", AdminSchema)
@@ -171,3 +173,4 @@ let Admin = new mongoose.model("Admin", AdminSchema)
 module.exports.Cossignment = Cosignment
 module.exports.History = History
 module.exports.Admin = Admin
+*/
