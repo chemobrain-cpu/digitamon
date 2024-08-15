@@ -15,7 +15,7 @@ module.exports.services = async (req, res, next) => {
    res.status(200).render('services')
 }
 module.exports.about = async (req, res, next) => {
-   res.status(200).render('about')
+   res.status(200).render('About')
 }
 module.exports.portfolios = async (req, res, next) => {
       // do something before returning this
