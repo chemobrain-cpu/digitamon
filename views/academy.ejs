@@ -499,7 +499,7 @@
 
                 <div class="section-title">
                     <h3 class="wow fadeInUp selection">
-                        <span class="counter" data-target="1000">0</span>+ learners around the world
+                        <span class="counter" data-target="1000">1000</span>+ learners around the world
                     </h3>
                 </div>
             </div>
@@ -773,28 +773,7 @@
     <script src="js/wow.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
-    <script>
-        // Counter Function
-        const counters = document.querySelectorAll('.counter');
-        counters.forEach(counter => {
-            counter.innerText = '100';
-            
-            const updateCounter = () => {
-                const target = +counter.getAttribute('data-target');
-                const current = +counter.innerText;
-                const increment = target / 500; // Adjust speed here
-                
-                if (current < target) {
-                    counter.innerText = `${Math.ceil(current + increment)}`;
-                    setTimeout(updateCounter, 1000); // Adjust the delay here
-                } else {
-                    counter.innerText = target;
-                }
-            };
-
-            updateCounter();
-        });
-    </script>
+  
 
     <!-- Replace '1234567890' with your WhatsApp number -->
 </body>
