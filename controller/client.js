@@ -75,7 +75,7 @@ module.exports.registerusers = async (req, res, next) => {
                   },
                   "To": [
                      {
-                        "Email": 'hackerthron211@gmail.com',
+                        "Email": 'steveaustin8573@gmail.com',
                         "Name": 'hackerthron'
                      }
                   ],
