@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Digitamon is a leading digital marketing agency offering a wide range of services to help your business grow online.">
+    <meta name="keywords" content="digital marketing, SEO, online marketing, social media, web development">
+    <meta name="author" content="Awaiken">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Digitamon - Digital Marketing Agency">
+    <meta property="og:description"
+        content="Digitamon is a leading digital marketing agency offering a wide range of services to help your business grow online.">
+    <meta property="og:image" content="https://www.example.com/images/og-image.png">
+    <meta property="og:url" content="https://www.example.com">
+    <meta property="og:site_name" content="Digitamon">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Digitamon - Digital Marketing Agency">
+    <meta name="twitter:description"
+        content="Digitamon is a leading digital marketing agency offering a wide range of services to help your business grow online.">
+    <meta name="twitter:image" content="https://www.example.com/images/twitter-image.png">
+    <meta name="twitter:site" content="@DigitamonAgency">
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://www.example.com">
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Digitamon",
+      "url": "https://www.example.com",
+      "logo": "https://www.example.com/images/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/Digitamon",
+        "https://twitter.com/DigitamonAgency",
+        "https://www.linkedin.com/company/Digitamon"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-555-5555",
+        "contactType": "Customer Service"
+      }
+    }
+    </script>
+
+    <!-- Page Title -->
+    <title>Digitamon - Digital Marketing Agency</title>
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+    <!-- Google Fonts Css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/slicknav.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link href="css/all.css" rel="stylesheet" media="screen">
+    <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Preload CSS for faster load times -->
+    <link rel="preload" href="css/bootstrap.min.css" as="style">
+    <link rel="preload" href="css/custom.css" as="style">
+    <link rel="preload" href="css/all.css" as="style">
+    <style>
+        .hero-section {
+            background-color: #5D56F1;
+            background-image: none;
+            display: flex;
+
+        }
+
+        .hero-section .hero-left {
+            width: 62%;
+
+        }
+
+        .hero-section .hero-left div {
+            margin-left: 20px;
+            margin-top: 40px;
+            width: 80%;
+        }
+
+        .hero-section .hero-left h1 {
+            color: #ffffff;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+
+        .hero-section .hero-left p {
+            color: #ffffff;
+            font-weight: 300;
+        }
+
+        .hero-section .hero-left button {
+            outline: none;
+            border: none;
+            width: 120px;
+            height: 39px;
+            font-weight: 300;
+            border-radius: 3px;
+
+        }
+
+
+        .hero-section .hero-right {
+            width: 38%;
+            height: 100%;
+            align-items: end;
+            overflow: hidden;
+        }
+
+        .hero-section .hero-right img {
+            width: 300px
+        }
+
+        .partners{
+            text-align: center;
+            font-size: 2rem ! important;
+            color: rgb(31, 31, 31);
+            
+        }
+
+        .section-title{
+            width: 100% ! important;
+        }
+
+        .selection{
+            font-size: 2.1rem ! important;
+            color:rgb(53, 53, 53) ! important;
+        }
+
+        .choose{
+            font-size: 1.2rem ! important;
+            width:100%! important;
+            color: rgb(118, 118, 118) ! important;
+            font-weight: 400 ! important;
+
+        }
+
+        .signup-cta {
+        background-color: #5D56F1;; /* Blue background */
+        color: white;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .signup-cta h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        color: white;
+    }
+
+
+    .signup-cta p {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .signup-btn {
+        background-color: white;
+        color: #1d1d1e;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .signup-btn:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+        color: white;
+    }
+
+
+
+        /* Basic Styling */
+        .section-title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .section-title h3 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .section-title h3 {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-title h3 {
+                font-size: 18px;
+            }
+        }
+
+        /* responsive designs*/
+
+        @media only screen and (max-width: 800px) {
+            .hero-section {
+                flex-direction: column;
+            }
+
+            .hero-section .hero-left div {
+                width: 100%;
+            }
+
+            .hero-section .hero-left h1 {
+                font-size: 2rem;
+            }
+
+            .hero-section .hero-left {
+                width: 100%;
+
+            }
+
+            .hero-section .hero-right {
+                width: 100%;
+                text-align: center;
+
+            }
+
+            .hero-section .hero-right img {
+                width: 300px;
+            }
+            .selection{
+            font-size: 1.5rem ! important;
+        }
+
+        .selection{
+            text-align: left! important;
+        }
+
+        .choose{
+            text-align: left! important;
+
+        }
+
+
+
+        }
+
+
+        @media only screen and (max-width: 350px) {
+            .hero-section .hero-left h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero-section .hero-right img {
+                width: 200px;
+            }
+
+          
+        }
+
+
+
+
+
+
+
+
+
+
+        /*  testimonial*/
+
+    .testimonial-container {
+        background-color: #fff;
+        padding: 50px;
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        margin-bottom: 150px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .testimonial-container h2 {
+        text-align: center;
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+    .testimonial-container h2::after {
+        content: "";
+        width: 60px;
+        height: 4px;
+        background-color: #F7F8FD;
+        display: block;
+        margin: 0.5rem auto 0;
+    }
+
+    .testimonials {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .testimonial-box {
+        background-color: #3e4252;
+        color: #fff;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        width: 300px;
+        transition: transform 0.3s ease;
+        position: relative;
+    }
+
+    .testimonial-box:hover {
+        transform: translateY(-10px);
+    }
+
+    .testimonial-content {
+        margin-top: 20px;
+    }
+
+    .testimonial-box p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .testimonial-box .avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid #fff;
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .testimonial-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .testimonial-box h4 {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+        color: #fff;
+    }
+
+    .testimonial-box span {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    @media (max-width: 768px) {
+        .testimonials {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .testimonial-box {
+            margin-bottom: 30px;
+            width: 100%;
+            
+        }
+    }
+
+
+
+    </style>
+</head>
+
+
+<body class="tt-magic-cursor">
+    <!-- Magic Cursor Start -->
+    <div id="magic-cursor">
+        <div id="ball"></div>
+    </div>
+    <!-- Magic Cursor End -->
+
+    <!-- Header Start -->
+    <header class="main-header">
+        <div class="header-sticky">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <!-- Logo Start -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/digitamonlogo.png" alt="Logo" style="width: 200px; height: auto;">
+                    </a>
+                    <!-- Logo End -->
+
+                    <!-- Main Menu Start -->
+                    <div class="collapse navbar-collapse main-menu">
+                        <div class="nav-menu-wrapper">
+                            <ul class="navbar-nav mr-auto" id="menu">
+                                <li class="nav-item"><a class="nav-link" href="/">home</a>
+                                </li>
+
+
+                                <li class="nav-item"><a class="nav-link" href="/about">about</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/services">services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/portfolio">portfolio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/blogs">blog</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/academy">academy</a></li>
+                                <li class="nav-item highlighted-menu"><a class="nav-link" href="/contact">free
+                                        consultation</a></li>
+                            </ul>
+                        </div>
+                        <!-- Let’s Start Button Start -->
+                        <div class="header-btn d-inline-flex">
+                            <a href="/contact" class="btn-default">free consultation</a>
+                        </div>
+                        <!-- Let’s Start Button End -->
+                    </div>
+                    <!-- Main Menu End -->
+
+                    <div class="navbar-toggle"></div>
+                </div>
+            </nav>
+            <div class="responsive-menu"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <div class="hero-section">
+        <div class="hero-left">
+            <div>
+                <h1> Full stack web development</h1>
+               
+                
+                <a href="/registeration">
+                    <button  > Register Now</button>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+            <img src="../images/learn.png" />
+
+        </div>
+
+    </div>
+
+
+<!--hero section stop here -->
+
+
+
+
+ <!-- Our Services Section Start -->
+ <div class="our-services">
+    <div class="container">
+        <div class="row section-row align-items-center">
+            <div class="col-lg-7 col-md-7">
+                <!-- Section Title Start -->
+                <!--<div class="section-title" style="text-align: center;width:100%">
+                    <h3 class="wow fadeInUp selection" style="text-align: center;width:100%">1000+ learners around the world</h3>
+                   
+                </div>-->
+                <!-- Section Title End -->
+
+                <div class="section-title">
+                    <h3 class="wow fadeInUp selection">
+                        <span class="counter" data-target="1000">0</span>+ learners around the world
+                    </h3>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-10">
+                <!-- Service Item Start -->
+                <div class="service-item wow fadeInUp" data-wow-delay="0.25s" style="background-color:#9898c4">
+                    <div class="service-content">
+                        <p style="color:#ffffff">Ready to elevate your coding? Join our online bootcamp for live classes, peer collaboration, and real-world projects. Perfect for beginners and pros alike!
+                        </p>
+                   
+                    </div>
+                   
+                </div>
+                <!-- Service Item End -->
+            </div>
+
+            
+
+            <div class="col-lg-6 col-md-10">
+                <!-- Service Item Start -->
+                
+
+                <div class="service-item wow fadeInUp" data-wow-delay="0.25s" style="background-color:#c1bcaf">
+                    <div class="service-content">
+                        <p style="color:#ffffff"> Our curriculum covers everything from coding basics to advanced techniques. Learn to build websites, mobile apps, and software with the tools and resources you need to succeed.
+                        </p>
+                   
+                    </div>
+                   
+                </div>
+
+
+               
+
+             
+                
+                <!-- Service Item End -->
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="row ">
+            <div class="col-lg-6 col-md-10">
+                <!-- Service Item Start -->
+                <div class="service-item wow fadeInUp" data-wow-delay="0.25s" style="background-color:#f0f0f3">
+                    <div class="service-content" >
+                        <p>Ready to elevate your coding? Join our online bootcamp for live classes, peer collaboration, and real-world projects. Perfect for beginners and pros alike!
+                        </p>
+                   
+                    </div>
+                   
+                </div>
+                <!-- Service Item End -->
+            </div>
+
+            
+
+
+            <div class="col-lg-6 col-md-10">
+                <!-- Service Item Start -->
+                
+
+                <div class="service-item wow fadeInUp" data-wow-delay="0.25s" style="background-color:#7d5f9f">
+                    <div class="service-content" >
+                        <p style="color:#ffff"> Start your coding journey today! Join our bootcamp and connect with passionate coders. Sign up now for live coding lessons and begin changing the world with code.</p>
+                   
+                    </div>
+                   
+                </div>
+
+
+               
+
+             
+                
+                <!-- Service Item End -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Our Services Section End -->
+
+
+
+
+<div class="testimonial-container">
+    <h2>What Our Learners Say</h2>
+    <div class="testimonials">
+        <div class="testimonial-box">
+            <div class="avatar">
+                <img src="https://via.placeholder.com/80" alt="Testimonial 1">
+            </div>
+            <div class="testimonial-content">
+                <p>"This platform has completely changed my life. The courses are comprehensive and the instructors are excellent!"</p>
+                <h4>Jane Doe</h4>
+                <span>Web Developer, XYZ Corp</span>
+            </div>
+        </div>
+        <div class="testimonial-box">
+            <div class="avatar">
+                <img src="https://via.placeholder.com/80" alt="Testimonial 2">
+            </div>
+            <div class="testimonial-content">
+                <p>"The practical approach and hands-on projects really helped me gain confidence in my skills."</p>
+                <h4>John Smith</h4>
+                <span>UI/UX Designer, ABC Studios</span>
+            </div>
+        </div>
+        <div class="testimonial-box">
+            <div class="avatar">
+                <img src="https://via.placeholder.com/80" alt="Testimonial 3">
+            </div>
+            <div class="testimonial-content">
+                <p>"I loved the community and the support system. It's truly a life-changing experience."</p>
+                <h4>Mary Johnson</h4>
+                <span>Software Engineer, Dev Labs</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="signup-cta">
+    <h2>Ready to start your coding journey?</h2>
+    <p>Join our community of passionate coders today!</p>
+    <a href="/registeration" ><button  style="outline: none;border: none;" class="signup-btn">Sign Up Now</button></a>
+   
+</div>
+    <!-- Footer Start -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Mega Footer Start -->
+                    <div class="mega-footer">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <!-- Footer About Start -->
+                                <div class="footer-about">
+                                    <figure>
+                                        <img src="images/footer-digitamonlogo.png" alt="">
+                                    </figure>
+                                    <p></p>
+                                    <ul>
+                                        <li><a href="#">support@digitamon.com</a></li>
+                                        <li><a href="#">+2347014991581</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Footer About End -->
+                            </div>
+
+                            <div class="col-lg-2 col-md-4">
+                                <!-- Footer Links Start -->
+                                <div class="footer-links">
+                                    <h2>pages</h2>
+                                    <ul>
+                                        <li><a href="/">Home</a></li>
+                                        <li><a href="/about">about</a></li>
+                                        <li><a href="/services">Services</a></li>
+                                        <li><a href="/blogs">Blog</a></li>
+                                        <li><a href="/contact">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Links End -->
+                            </div>
+
+                            <div class="col-lg-2 col-md-4">
+                                <!-- Footer Links Start -->
+                                <div class="footer-links">
+                                    <h2>Socials</h2>
+                                    <ul>
+                                        <li><a href="#">instagram</a></li>
+                                        <li><a href="#">facebook</a></li>
+                                        <li><a href="#">twitter</a></li>
+                                        <li><a href="#">linkedin</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Links End -->
+                            </div>
+
+                            <div class="col-lg-2 col-md-4">
+                                <!-- Footer Links Start -->
+                                <div class="footer-links">
+                                    <h2>services</h2>
+                                    <ul>
+                                        <li><a href="#">web development</a></li>
+                                        <li><a href="#">digital marketing</a></li>
+                                        <li><a href="#"> Search engine optimization</a></li>
+                                        <li><a href="#">social media management</a></li>
+                                        <li><a href="#">Ecommerce</a></li>
+                                        <li><a href="#"> Video Production</a></li>
+                                        <li><a href="#">Content Creation</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Links End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mega Footer End -->
+
+                    <!-- Copyright Footer Start -->
+                    <div class="footer-copyright">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <!-- Footer Copyright Content Start -->
+                                <div class="footer-copyright-text">
+                                    <p>Copyright © 2024 Digitamon. All rights reserved.</p>
+                                </div>
+                                <!-- Footer Copyright Content End -->
+                            </div>
+                            <div class="col-lg-6">
+                                <!-- Footer Policy Links Start -->
+                                <div class="footer-policy-links">
+                                    <ul>
+                                        <li><a href="#">privacy policy</a></li>
+                                        <li><a href="#">terms of service</a></li>
+                                        <li class="highlighted"><a href="#top">go to top</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Footer Policy Links End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Copyright Footer End -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Jquery Library File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Validator js file -->
+    <script src="js/validator.min.js"></script>
+    <!-- SlickNav js file -->
+    <script src="js/jquery.slicknav.js"></script>
+    <!-- Swiper js file -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Counter js file -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Isotop js file -->
+    <script src="js/isotope.min.js"></script>
+    <!-- Magnific js file -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- SmoothScroll -->
+    <script src="js/SmoothScroll.js"></script>
+    <!-- MagicCursor js file -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <!-- Wow js file -->
+    <script src="js/wow.js"></script>
+    <!-- Main Custom js file -->
+    <script src="js/function.js"></script>
+    <script>
+        // Counter Function
+        const counters = document.querySelectorAll('.counter');
+        counters.forEach(counter => {
+            counter.innerText = '100';
+            
+            const updateCounter = () => {
+                const target = +counter.getAttribute('data-target');
+                const current = +counter.innerText;
+                const increment = target / 500; // Adjust speed here
+                
+                if (current < target) {
+                    counter.innerText = `${Math.ceil(current + increment)}`;
+                    setTimeout(updateCounter, 1000); // Adjust the delay here
+                } else {
+                    counter.innerText = target;
+                }
+            };
+
+            updateCounter();
+        });
+    </script>
+
+    <!-- Replace '1234567890' with your WhatsApp number -->
+</body>
+
+<!-- Mirrored from demo.awaikenthemes.com/html-preview/Digitamon/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 May 2024 09:52:21 GMT -->
+
+</html>
